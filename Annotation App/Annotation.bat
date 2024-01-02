@@ -1,0 +1,3 @@
+start "Server Terminal" cmd /k "cd server && (if not exist node_modules\axios\package.json npm install axios) && (if not exist node_modules\express\package.json npm install express) && (if not exist node_modules\cors\package.json npm install cors) && node server.js"
+::
+start "App Terminal" cmd /k "cd project && (if not exist node_modules\axios\package.json npm install axios) && (if not exist node_modules\express\package.json npm install express) && (if not exist node_modules\express\package.json npm install express) && (if not exist node_modules\cors\package.json npm install cors) && npm start"
